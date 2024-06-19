@@ -38,7 +38,7 @@ df3 = pd.DataFrame(che)
 df3 =  df3.groupby(by=["name","Subject"],as_index=False).sum(["Marks"])
 print(df1)
 # print(df2)
-# print(df3)
+print(df3)
 
 merged=pd.concat([df1,df2,df3],ignore_index=True,axis=0)
 G=merged.groupby('name',as_index=False)
